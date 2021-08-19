@@ -1,0 +1,256 @@
+body {
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    font-family:"Eina01", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+h1, h2, h3{
+    line-height: 1;
+    text-transform: uppercase;
+    color:#824938;
+    font-weight: 900;
+    /* font-family:"Playfair Display", serif; */
+}
+h2, h3, p{
+    margin-bottom: 1em;
+}
+img{
+    display: block;
+    max-width: 80%;
+}
+.testimonial img{
+    border-radius: 15em;
+}
+.text-center{
+    text-align:center;
+}
+header, section{
+    padding:3rem 0;
+}
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem)
+}
+.split{
+    display: flex;
+    flex-direction: column;
+}
+.cont--n{
+    max-width:35rem;
+}
+.cont--n img{
+    width: 40%;
+    margin:auto
+}
+.bg-light{
+    background-color: #F3EED9;
+}
+.bg-primary{
+    color:#F3EED9;
+    background-color: #824936;
+}
+.bg-dark{
+    color:#F3EED9;
+    background-color: #222C2A;
+}
+
+.bg-primary h2, .bg-dark h2{
+    color:#F3EED9;
+}
+/* styling navs for mobile first strategy */
+nav ul{
+    padding: 0;
+}
+ nav ul li{
+     background-color: #824936;
+     list-style-type: none;
+     padding: 0.6em;
+     margin: 0.5em;
+     border: 0.2em solid #824936;
+     border-radius: 1.8em;
+ }
+ nav ul li a{
+     color: #fff;
+     font-weight: 500;
+     text-decoration:none;
+ }
+/* pseudo code */
+li:hover{
+    background: #F3EED9;
+    transition: .5s;
+}
+li a:hover{
+    color:#000;
+}
+/* styling footer */
+input{
+    padding: 0.8em;
+    margin: 1em;
+    width: 60%;
+}
+input.but{
+    background-color: #824936 ;
+    color:#fff
+}
+.wrapper{
+    align-items: center;
+
+}
+.icon, span{
+    display: inline-flex;
+    padding:0.6em;
+}
+span a{
+    text-decoration: none;
+    color: #000;
+} 
+.copyright{
+    text-transform: uppercase;
+}
+.copyright a{
+    text-decoration: none;
+    font-weight:bold;
+    color:#824938;
+}
+/* end of footer */
+
+/* Register Page styling starts here!*/
+#edu, textarea{
+    padding: 0.8em;
+    margin: 1em;
+    width: 60%;
+}
+input, textarea{
+    font-family:sans-serif;
+}
+.gender{
+    padding: 0.2em;
+    margin: 0;
+    width: 15%;
+}
+.footer, span a{
+    background-color:#F3EED9;
+    text-align: center;
+}
+/* end or register form */
+
+/* About Us Page styling starts here!*/
+.our_team  {
+    text-align: center;
+}
+
+/* Adds padding on top and bottom of team members */
+.team_m {
+    padding: 3em 0 3em 0;
+    background-color: #F3EED9;
+}
+
+/* Transfroms copyright all into uppercase */
+.copyright {
+    text-transform: uppercase;
+}
+
+/* Adds styling to 'Contact' button on team members */
+.button_m {
+    width: 40%;
+    border: none;
+    display: inline-block;
+    padding: 9px;
+    color: white;
+    background-color: #824936;
+}
+/* end of about us page */
+/* Service Page styling starts here! */
+table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+th {
+    background-color: #824936;
+    color: white;
+}
+th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+.para{
+    padding: 0 4rem;
+}
+.split table {
+    display: none;
+}
+
+/* media query for table */
+@media (min-width: 500px) {
+    .split table {
+        display: table;
+    }
+}
+
+/* media queries starts here! */
+/* for tablet viewport */
+@media (min-width: 800px) {
+    .split{
+        flex-direction: row;
+    }
+    .split > *{
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
+    header, section{
+        padding: 7rem
+    }
+    .testimonial img{
+        border-radius: 15em;
+    }
+    nav ul li{
+        display:inline-flex;
+        justify-content: space-around;
+    }
+    li:hover{
+        background: #F3EED9;
+        transition: .5s;
+    }
+    li a:hover{
+        color:#000;
+    }
+}
+    
+/* for desktop viewport */
+@media (min-width: 998px){
+    .split{
+        flex-direction: row;
+    }
+    .split > *{
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
+    header, section{
+        padding: 4rem;
+    }
+    nav ul li{
+        background-color:#F3EED9 ;
+        display:inline-flex;
+        justify-content: space-around;
+        border: 0.2em solid #F3EED9;
+    }
+    nav ul li a{
+        color:#000
+    }
+    li:hover{
+        background-color:#824936;
+        transition: 0.5s;
+    }
+    li a:hover{
+        color:#fff
+    }
+}
